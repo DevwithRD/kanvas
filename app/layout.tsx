@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <div className='flex justify-center h-full items-start'>
+        <div className='flex justify-start items-start h-full'>
           <Sidebar />
           <main className="w-full relative app p-1 h-full scrollbar-thumb-gray-400 scrollbar-thin scrollbar-thumb-rounded-lg scrollbar-track-gray-50 ">
             {children}
