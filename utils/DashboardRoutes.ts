@@ -9,4 +9,10 @@ export const DashboardRoutes = [
     // avatar: <AiOutlineHome />,
     authorization: Authorization.SHOW,
   },
+  {
+    title: "Profile",
+    path: Routes.PROFILE,
+    // avatar: <AiOutlineHome />,
+    authorization: Authorization.SHOW,
+  },
 ];

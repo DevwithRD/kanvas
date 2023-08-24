@@ -2,11 +2,15 @@ import React from "react";
 import { FcGoogle } from "react-icons/fc";
 import { RiTwitterFill, RiGithubFill } from "react-icons/ri";
 import { Button, Checkbox, Form, Input, Typography } from "antd";
+import axios from "axios";
 const { Text, Title } = Typography;
 
 const LoginForm = () => {
   const handleLogin = (values: {}) => {
-    console.log(values);
+    const res = axios.post('/api/auth/login', {
+      email: values.email,
+      password: values.password
+    })
   };
 
   return (
