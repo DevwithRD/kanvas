@@ -1,7 +1,5 @@
-import Sidebar from '@/components/Sidebar'
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Header from '@/components/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,13 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
-        <div className='flex justify-center h-full items-start'>
-          <Sidebar />
-          <main className="w-full relative app p-1 h-full scrollbar-thumb-gray-400 scrollbar-thin scrollbar-thumb-rounded-lg scrollbar-track-gray-50 ">
-            {children}
-          </main>
-        </div>
+          {children}
       </body>
     </html>
   )
